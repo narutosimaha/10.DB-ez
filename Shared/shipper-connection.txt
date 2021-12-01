@@ -1,0 +1,6 @@
+MS SQL Server version:	MS SQL 2019 Express
+MS SQL Server address:	Shipper10DB.mssql.somee.com
+Login name:	narutosimaha_SQLLogin_1
+Login password:	sfey2z62ok
+Connection string:
+workstation id=Shipper10DB.mssql.somee.com;packet size=4096;user id=narutosimaha_SQLLogin_1;pwd=sfey2z62ok;data source=Shipper10DB.mssql.somee.com;persist security info=False;initial catalog=Shipper10DB
