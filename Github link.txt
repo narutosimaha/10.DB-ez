@@ -1,0 +1,2 @@
+1. Web applicaiton repository: https://github.com/HienNguyen120201/SHIPPER.git
+2. Report repository: https://github.com/narutosimaha/10.DB-ez.git
