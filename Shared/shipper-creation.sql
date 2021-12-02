@@ -134,6 +134,7 @@ CREATE TABLE KhachHang(
 	loaiKhachHang varchar(20),
 	soDonBiHuyDoKhachHang int default 0,
 	soDonDaDat int default 0,
+	isActive int default 1
 	primary key (maKhachHang)
 );
 CREATE TABLE ChiNhanh(
@@ -143,6 +144,7 @@ CREATE TABLE ChiNhanh(
 		diaChi nvarchar(50),
 		maNVQuanLy uniqueidentifier,
 		maChiNhanhCha int,
+		isActive bit default 1
 );
 
 CREATE TABLE DonKhieuNai(
@@ -201,7 +203,8 @@ CREATE TABLE MonAn (
 	tenMonAn	nvarchar(50) not null,
 	donGia		int not null,
 	moTa		nvarchar(300),
-	maNhaHangOffer	int not null,	
+	maNhaHangOffer	int not null,
+	isActive int default 1
 );
 CREATE TABLE NhaHang (
 	maNhaHang	int identity(1,1) Primary Key,
