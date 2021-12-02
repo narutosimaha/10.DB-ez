@@ -204,6 +204,7 @@ CREATE TABLE MonAn (
 	donGia		int not null,
 	moTa		nvarchar(300),
 	maNhaHangOffer	int not null,
+	image varchar(300),
 	isActive int default 1
 );
 CREATE TABLE NhaHang (
