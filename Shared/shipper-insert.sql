@@ -130,6 +130,22 @@ VALUES
 (1,'09323456789'),
 (6,'01122381455')
 
+---------------------INSERT Trạng thái đơn vận chuyển---------------------
+INSERT INTO TrangThaiDon(trangThai) VALUES
+('Đã hủy'),
+('Đã giao'),
+('Giao không thành công'),
+('Đang giao'),
+('Đang ở kho'),
+('Đang chờ xác nhận')
+
+---------------------INSERT Phương thức thanh toán---------------------
+INSERT INTO PhuongThucThanhToan (phuongThucThanhToan) VALUES
+('Momo'),
+('Tiền mặt'),
+('Tín dụng ngân hàng'),
+('AirPay'),
+('Chưa Thanh Toán')
 
 ---------------------INSERT Đơn Vận Chuyển---------------------
 --**NOTE: maKhachHang là trường guid random, khi insert phải đổi thành những mã tương ứng của trường mã khách hàng 
@@ -148,7 +164,7 @@ phuongThucThanhToan,maKhachHang) VALUES
 (N'Đông Hòa','2021-11-29 8:07:31',NULL, 4, 23000,3,'DA586943-8AE6-4FD8-9CBE-EB2D06EA83F3'),
 (N'Đông Hòa','2021-06-10 17:07:31','2021-06-19 14:032:15', 1, 47000,4,'DA586943-8AE6-4FD8-9CBE-EB2D06EA83F3'),
 (N'Quận Bình Tân','2021-11-05 06:11:35','2021-11-18 09:05:44', 1, 16000,2,'BFF13AD4-7F4B-42E6-9D0B-EBAAACE6FDB1'),
-(N'Quận Bình Tân','2021-11-26 14:23:55',NULL, 5, 35000,1,'BFF13AD4-7F4B-42E6-9D0B-EBAAACE6FDB1'),
+(N'Quận Bình Tân','2021-11-26 14:23:55',NULL, 5, 35000,1,'BFF13AD4-7F4B-42E6-9D0B-EBAAACE6FDB1')
 
 
 ---------------------INSERT Mã Khuyến Mãi---------------------
