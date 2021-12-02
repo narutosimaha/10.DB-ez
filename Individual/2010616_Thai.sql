@@ -130,10 +130,10 @@ BEGIN
 	END
 	ELSE
 	BEGIN
-	SELECT ho as Ho,tenLot as TenLot,ten as Ten,ngayVaoLam as NgayVaoLam,luong as Luong,chiSoUyTin as ChiSoUyTin, T.maDonVi as MaChiNhanh, tenChiNhanh as TenChiNhanh
-	FROM (SELECT ho,tenLot,ten,ngayVaoLam,luong,chiSoUyTin, maDonVi,loaiNhanVien
+	SELECT ho as Ho,tenLot as TenLot,ten as Ten,ngayVaoLam as NgayVaoLam,luong as Luong,chiSoUyTin as ChiSoUyTin, T.maDonVi as MaChiNhanh, tenChiNhanh as TenChiNhanh,T.loaiNhanVien as ChucVu,T.isActive as Sate, T.taiKhoan as TaiKhoan 
+	FROM (SELECT ho,tenLot,ten,ngayVaoLam,luong,chiSoUyTin, maDonVi,loaiNhanVien,taiKhoan,isActive
 		FROM NhanVien C JOIN NhanVienChiNhanh N ON c.maNhanVien=N.maNhanVien)T JOIN ChiNhanh on T.maDonVi=ChiNhanh.maDonVi
-	WHERE lower(T.loaiNhanVien)=lower(@type)
+	WHERE lower(T.loaiNhanVien)=lower(@type) 
 	ORDER BY ChucVu, Ho, TenLot, Ten
 	END
 END
